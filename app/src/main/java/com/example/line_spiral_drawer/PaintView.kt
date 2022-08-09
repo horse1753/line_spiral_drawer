@@ -11,9 +11,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.line_spiral_drawer.MainActivity.Companion.paintBrush
 import com.example.line_spiral_drawer.MainActivity.Companion.path
-import com.example.line_spiral_drawer.PaintView.SharedData.timeList
-import com.example.line_spiral_drawer.PaintView.SharedData.xcoordinate
-import com.example.line_spiral_drawer.PaintView.SharedData.ycoordinate
+//import com.example.line_spiral_drawer.PaintView.SharedData.timeList
+//import com.example.line_spiral_drawer.PaintView.SharedData.xcoordinate
+//import com.example.line_spiral_drawer.PaintView.SharedData.ycoordinate
 import java.security.Timestamp
 
 class PaintView:View {
@@ -45,7 +45,7 @@ class PaintView:View {
         params = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT)
     }
     object SharedData{
-        val timeList: MutableList<Long> = mutableListOf()
+//        val timeList: MutableList<Long> = mutableListOf()
 //        val xcoordinate: MutableList<Long> = mutableListOf()
 //        val ycoordinate: MutableList<Long> = mutableListOf()
     }
