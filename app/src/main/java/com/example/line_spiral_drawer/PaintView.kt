@@ -46,8 +46,8 @@ class PaintView:View {
     }
     object SharedData{
         val timeList: MutableList<Long> = mutableListOf()
-        val xcoordinate: MutableList<Long> = mutableListOf()
-        val ycoordinate: MutableList<Long> = mutableListOf()
+//        val xcoordinate: MutableList<Long> = mutableListOf()
+//        val ycoordinate: MutableList<Long> = mutableListOf()
     }
 
 
@@ -62,18 +62,18 @@ class PaintView:View {
             MotionEvent.ACTION_DOWN -> {
                 path.moveTo(x,y)
 
-                timeList.add(System.currentTimeMillis())
-                xcoordinate.add(x.toLong())
-                ycoordinate.add(y.toLong())
+//                timeList.add(System.currentTimeMillis())
+//                xcoordinate.add(x.toLong())
+//                ycoordinate.add(y.toLong())
                 return true
             }
             MotionEvent.ACTION_MOVE -> {
                 path.lineTo(x,y)
                 pathList.add(path)
                 colorList.add(currentBrush)
-                timeList.add(System.currentTimeMillis())
-                xcoordinate.add(x.toLong())
-                ycoordinate.add(y.toLong())
+//                timeList.add(System.currentTimeMillis())
+//                xcoordinate.add(x.toLong())
+//                ycoordinate.add(y.toLong())
             }
             else -> return false
 
